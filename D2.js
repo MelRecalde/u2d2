@@ -58,11 +58,12 @@ if(number1 === 8 || (subtraction) == 8){
 */
 
 let totalShoppingCart = 1300
+let shipping = 10
 
 if(totalShoppingCart > 50){
-  console.log("Total : " + totalShoppingCart + "$ + Free shipping")
+  console.log("Total : $ " + totalShoppingCart + "$ + Free shipping")
 } else {
-  console.log("Total : " + totalShoppingCart + " + 10$ shipping")
+  console.log("Total : $ " + (totalShoppingCart + shipping))
 }
 
 /* ESERCIZIO 6
@@ -74,9 +75,9 @@ let discount = 20
 let withDiscount = (totalShoppingCart * 20) / 100
 
 if(totalShoppingCart > 50){
-  console.log("Total : " + withDiscount + "$ + Free shipping")
+  console.log("Total : $ " + withDiscount + "$ + Free shipping")
 } else {
-  console.log("Total : " + withDiscount + " + 10$ shipping")
+  console.log("Total : $ " + (withDiscount + shipping))
 }
 
 

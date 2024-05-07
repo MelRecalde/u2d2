@@ -91,10 +91,32 @@ let num1 = 3
 let num2 = 30
 let num3 = 94
 
-let numbers = [num1, num2, num3]
+/*let numbers = [num1, num2, num3]
 
 let orderedList = numbers.sort()
 console.log(orderedList)
+*/
+if (num1 >= num2) {
+  if (num3 >= num1) {
+    console.log(num3, num1, num2)
+  } else {
+    if (num3 >= num2) {
+      console.log(num1, num3, num2)
+    } else {
+      console.log(num1, num2, num3)
+    }
+  }
+} else {
+  if (num3 >= num2) {
+    console.log(num3, num2, num1)
+  } else {
+    if (num3 >= num1) {
+      console.log(num2, num3, num1)
+    } else {
+      console.log(num2, num1, num3)
+    }
+  }
+}
 
 
 /* ESERCIZIO 8

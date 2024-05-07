@@ -125,7 +125,12 @@ if (num1 >= num2) {
 
 const message = "Hello World"
 
-console.log(typeof message)
+// console.log(typeof message)
+if (typeof message === 'number') {
+  console.log("it's a number!")
+} else {
+  console.log("it's not a number!")
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -198,6 +203,5 @@ console.log(array)
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-array.pop([9])
-array.push(100)
+array[9] = 100
 console.log(array)
